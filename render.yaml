@@ -1,10 +1,8 @@
 services:
   - type: web
     name: crypto-scalping-bot
-    runtime: python
+    env: python
     buildCommand: "pip install -r requirements.txt"
     startCommand: "python bot.py"
-    env: python
-    region: oregon
-    plan: free
     pythonVersion: 3.10.13
+    autoDeploy: true
